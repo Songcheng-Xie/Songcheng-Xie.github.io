@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>关于更换hexo主题 | Naval的博客空间</title><meta name="author" content="Naval"><meta name="copyright" content="Naval"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="这是我第一次使用hexo来更换我的博客主题，记录一下我学习到的一些小点子。 1.在GitHub上下载相关主题最快捷的体验方式，当然是使用现成的主题啦！在官方的主题当中，我选择了butterfly的主题，因为这个主题的整体颜色是蓝色的，而且我最亲爱的女朋友，最喜欢的也是蓝色和翩翩起舞的蝴蝶～🦋这一步没有什么好说的，在GitHub上把自己喜欢的主题克隆到自己的本地博客的themes文件夹下；在这一步">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于更换hexo主题">
+<meta property="og:url" content="https://songcheng-xie.github.io/2025/10/11/%E5%85%B3%E4%BA%8E%E6%9B%B4%E6%8D%A2hexo%E4%B8%BB%E9%A2%98/index.html">
+<meta property="og:site_name" content="Naval的博客空间">
+<meta property="og:description" content="这是我第一次使用hexo来更换我的博客主题，记录一下我学习到的一些小点子。 1.在GitHub上下载相关主题最快捷的体验方式，当然是使用现成的主题啦！在官方的主题当中，我选择了butterfly的主题，因为这个主题的整体颜色是蓝色的，而且我最亲爱的女朋友，最喜欢的也是蓝色和翩翩起舞的蝴蝶～🦋这一步没有什么好说的，在GitHub上把自己喜欢的主题克隆到自己的本地博客的themes文件夹下；在这一步">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://songcheng-xie.github.io/img/covers/c1.jpg">
+<meta property="article:published_time" content="2025-10-11T11:40:09.000Z">
+<meta property="article:modified_time" content="2025-10-11T12:45:42.256Z">
+<meta property="article:author" content="Naval">
+<meta property="article:tag" content="博客搭建">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://songcheng-xie.github.io/img/covers/c1.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "关于更换hexo主题",
+  "url": "https://songcheng-xie.github.io/2025/10/11/%E5%85%B3%E4%BA%8E%E6%9B%B4%E6%8D%A2hexo%E4%B8%BB%E9%A2%98/",
+  "image": "https://songcheng-xie.github.io/img/covers/c1.jpg",
+  "datePublished": "2025-10-11T11:40:09.000Z",
+  "dateModified": "2025-10-11T12:45:42.256Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Naval",
+      "url": "https://Songcheng-Xie.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://songcheng-xie.github.io/2025/10/11/%E5%85%B3%E4%BA%8E%E6%9B%B4%E6%8D%A2hexo%E4%B8%BB%E9%A2%98/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '关于更换hexo主题',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/covers/c1.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Naval的博客空间</span></a><a class="nav-page-title" href="/"><span class="site-name">关于更换hexo主题</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">关于更换hexo主题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-10-11T11:40:09.000Z" title="发表于 2025-10-11 19:40:09">2025-10-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-10-11T12:45:42.256Z" title="更新于 2025-10-11 20:45:42">2025-10-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>这是我第一次使用hexo来更换我的博客主题，记录一下我学习到的一些小点子。</p>
+<h2 id="1-在GitHub上下载相关主题"><a href="#1-在GitHub上下载相关主题" class="headerlink" title="1.在GitHub上下载相关主题"></a>1.在GitHub上下载相关主题</h2><p>最快捷的体验方式，当然是使用现成的主题啦！<br>在官方的主题当中，我选择了butterfly的主题，因为这个主题的整体颜色是蓝色的，而且我最亲爱的女朋友，最喜欢的也是蓝色和翩翩起舞的蝴蝶～🦋<br>这一步没有什么好说的，在GitHub上把自己喜欢的主题克隆到自己的本地博客的themes文件夹下；在这一步当中值得注意的是，我第一次发现在<code>git clone</code> 命令的最后可以直接在尾部空格后加上<code>themes/butterfly</code>表示将clone后的文件放到该根目录的themes&#x2F;butterfly文件夹中。</p>
+<h2 id="2-修改配置"><a href="#2-修改配置" class="headerlink" title="2.修改配置"></a>2.修改配置</h2><p>在下载完成主题之后，需要在<code>_config.yml</code>文件当中找到<code>theme:</code>并且将冒号后修改为本次的主题<code>butterfly</code>。注意不要大写。要和主题名称完全一致。</p>
+<h2 id="3-本地测试"><a href="#3-本地测试" class="headerlink" title="3.本地测试"></a>3.本地测试</h2><p>在修改完主题配置之后，就可以开始进行主题的生成和预览了。在终端中输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>接着就可以在本地的4000端口预览生成的主题啦！</p>
+<h3 id="在更换主题过程中发现和获得的知识"><a href="#在更换主题过程中发现和获得的知识" class="headerlink" title="在更换主题过程中发现和获得的知识"></a>在更换主题过程中发现和获得的知识</h3><h4 id="1-关于时区"><a href="#1-关于时区" class="headerlink" title="1.关于时区"></a>1.关于时区</h4><p>本来我在<code>_config.yml</code>文件当中写出的<code>timezone:</code>是<code>Asia/Beijing</code>,但是gpt在刚开始的时候让我填的就是<code>Asia/Shanghai</code>, 我想中国不应该是北京时间吗？所以就直接填的Beijing，但是在启用服务的时候就会报错<code>TypeError: Cannot read properties of null (reading &#39;utcOffset&#39;)</code>, 排查了是时间没有检测到，为空。后来将时区的配置改为<code>Asia/Shanghai</code><br><strong>原因</strong>：Hexo 内部会用 moment-timezone 库处理时间，例如文章创建时间、显示在页面上的时间、RSS feed 时间等。其中只有</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Asia/Shanghai</span><br><span class="line">Asia/Urumqi</span><br><span class="line">Asia/Hong_Kong</span><br></pre></td></tr></table></figure>
+<p>所以<code>Aisa/Beijing</code>无效。</p>
+<h4 id="2-关于-pug文件"><a href="#2-关于-pug文件" class="headerlink" title="2.关于.pug文件"></a>2.关于.pug文件</h4><p>好奇主题文件里面都有些什么东西，所以好奇点进去看了一下，发现了在layout文件夹下基本上都是用<code>.pug</code>结尾的文件。以前没有看到过这种格式的文件。所以chat了一下，发现原来这是一种<strong>简洁的html</strong>的写法，让前端可以在低代码的情况下生成结构化的框架。贴个栗子🌰：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;post&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Welcome to my blog!<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>其对应的pug写法为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.post</span><br><span class="line">  h1 Hello World</span><br><span class="line">  p Welcome to my blog!</span><br></pre></td></tr></table></figure>
+<p>这样看起来真的简洁了好多啊！等有时间的时候可以偷偷学一学。<br>我在阅读<code>footer.pug</code>的时候，把这个框架给hexo以及butterfly框架的链接给删了，这就是自己部署网站的魅力，自己想怎么样怎么样，自由是我的。<br>ps：但是我还是很想自己搭一个自己的博客网站啊，两年前写的后端，还一直没等到我用vue重新搭建前端，什么时候是个头嘞。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://Songcheng-Xie.github.io">Naval</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://songcheng-xie.github.io/2025/10/11/%E5%85%B3%E4%BA%8E%E6%9B%B4%E6%8D%A2hexo%E4%B8%BB%E9%A2%98/">https://songcheng-xie.github.io/2025/10/11/%E5%85%B3%E4%BA%8E%E6%9B%B4%E6%8D%A2hexo%E4%B8%BB%E9%A2%98/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://Songcheng-Xie.github.io" target="_blank">Naval的博客空间</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a></div><div class="post-share"><div class="social-share" data-image="/img/covers/c1.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/10/10/Hello-my-blog/" title="Hello my blog"><img class="cover" src="/img/covers/hello.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Hello my blog</div></div><div class="info-2"><div class="info-item-1">这是我的第一篇博客！！！ </div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Naval</div><div class="author-info-description">我将会在这里记录分享我计算机技术学习和读研生活思考</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%9C%A8GitHub%E4%B8%8A%E4%B8%8B%E8%BD%BD%E7%9B%B8%E5%85%B3%E4%B8%BB%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">1.在GitHub上下载相关主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">2.修改配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%9C%AC%E5%9C%B0%E6%B5%8B%E8%AF%95"><span class="toc-number">3.</span> <span class="toc-text">3.本地测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%8F%91%E7%8E%B0%E5%92%8C%E8%8E%B7%E5%BE%97%E7%9A%84%E7%9F%A5%E8%AF%86"><span class="toc-number">3.1.</span> <span class="toc-text">在更换主题过程中发现和获得的知识</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E5%85%B3%E4%BA%8E%E6%97%B6%E5%8C%BA"><span class="toc-number">3.1.1.</span> <span class="toc-text">1.关于时区</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%85%B3%E4%BA%8E-pug%E6%96%87%E4%BB%B6"><span class="toc-number">3.1.2.</span> <span class="toc-text">2.关于.pug文件</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/10/11/%E5%85%B3%E4%BA%8E%E6%9B%B4%E6%8D%A2hexo%E4%B8%BB%E9%A2%98/" title="关于更换hexo主题"><img src="/img/covers/c1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于更换hexo主题"/></a><div class="content"><a class="title" href="/2025/10/11/%E5%85%B3%E4%BA%8E%E6%9B%B4%E6%8D%A2hexo%E4%B8%BB%E9%A2%98/" title="关于更换hexo主题">关于更换hexo主题</a><time datetime="2025-10-11T11:40:09.000Z" title="发表于 2025-10-11 19:40:09">2025-10-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/10/10/Hello-my-blog/" title="Hello my blog"><img src="/img/covers/hello.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello my blog"/></a><div class="content"><a class="title" href="/2025/10/10/Hello-my-blog/" title="Hello my blog">Hello my blog</a><time datetime="2025-10-10T12:20:06.000Z" title="发表于 2025-10-10 20:20:06">2025-10-10</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By Naval</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
